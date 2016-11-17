@@ -1,0 +1,22 @@
+<div class="col-md-8 col-md-offset-2">
+    <!--Data driven ou react driven aproach para formulários-->
+    <!--o qual será criado programaticamente no controller-->
+    <!--e referenciado na variável myform da classe component-->
+    <!--e processar o submit no método correspondente da classe.-->
+    <!--O atributo formControlName corresponde ao nome sob o qual-->
+    <!--o ocorre o binding com o atributo do form myForm-->
+
+    <!--ReactiveFormsModule everá ser importado no NgModule para usar a estratégia data driven-->
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="email">Mail</label>
+            <input type="email" class="form-control" id="email" formControlName="email">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" formControlName="password">
+        </div>
+        <button type="submit" [disabled]="!myForm.valid" class="btn btn-primary">Submit</button>
+    </form>
+
+</div>
