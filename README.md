@@ -9,11 +9,9 @@ CRUD Mean stack 2 com webpack
 <h2>Buildar</h2>
 
 <h4>Desenvolvimento</h4>
-<br>
 <p>npm run build
 <br>
 <h4>Produção</h4>
-
 <p>npm run build
 <br>
 
